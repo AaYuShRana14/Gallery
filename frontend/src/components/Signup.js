@@ -11,7 +11,7 @@ const Signup = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("https://gallery-fyvv.onrender.com/signup", {
+            const response = await axios.post("https://gallery-fyvv.onrender.com/user/signup", {
                 email,
                 password,
             });
