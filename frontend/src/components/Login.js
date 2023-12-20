@@ -11,7 +11,7 @@ const Login=()=>{
     const submitHandler = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:3000/user/login", {
+            const response = await axios.post("https://gallery-fyvv.onrender.com/user/login", {
                 email,
                 password,
             });

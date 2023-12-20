@@ -31,7 +31,7 @@ const Allphotos = () => {
       },
       function (err, result) {
         if (result && result.event === "success" && result.info.secure_url) {
-          const apiUrl = 'http://localhost:3000/upload';
+          const apiUrl = 'https://gallery-fyvv.onrender.com/upload';
           const headers = {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + localStorage.getItem("token"),
@@ -66,7 +66,7 @@ const Allphotos = () => {
 
   const fetchImages = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/photos', {
+      const res = await axios.get('https://gallery-fyvv.onrender.com/photos', {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + localStorage.getItem("token"),
