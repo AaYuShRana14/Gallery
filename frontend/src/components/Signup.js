@@ -29,7 +29,7 @@ const Signup = () => {
     }
     return (
         <div style={{ position: 'relative', opacity: '0.9' }}>
-            <img src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/10/northern-lights-causes.jpg" style={{ width: '100vw', height: '100vh', objectFit: 'cover' }} alt="Background" />
+            <img src="https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg?cs=srgb&dl=pexels-atlasworld-1674049.jpg&fm=jpg" style={{ width: '100vw', height: '100vh', objectFit: 'cover' }} alt="Background" />
             <div style={{ position: "absolute", top: 0, left: 0, width: "100vw", height: "100vh" }}>
                 <div style={{ display:"flex", justifyContent:"center", marginTop:"40px"}}>
                     <div style={{ color: "white" }}>Sign up</div>
