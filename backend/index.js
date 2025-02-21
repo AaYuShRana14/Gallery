@@ -38,6 +38,8 @@ app.post('/user/signup', async(req, res) => {
 })
 app.post('/user/login',async(req,res)=>{
     const data = userdata.safeParse(req.body);
+    console.log("**********");
+    console.log(data);
     if(data.success){
         const { email, password } = data.data;
         const user=await TheUsers.findOne({email,password});
