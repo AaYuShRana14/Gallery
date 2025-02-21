@@ -9,7 +9,11 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const authenticateJwt=require('./Middleware/Authjwt.cjs');
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 const secret="isdjdsodefrk545";
 mongoose.connect('mongodb+srv://antineutrino1464:G8lVrHHHj9q5mnuw@cluster0.vyhktec.mongodb.net/coursesretryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const userdata = z.object({
